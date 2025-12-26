@@ -11,8 +11,13 @@ config_version=5
 [application]
 
 config/name="Lan TTRPG"
+run/main_scene="uid://dsu3klfvyvrd3"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/godot-vim/plugin.cfg")
 
 [rendering]
 
