@@ -33,7 +33,7 @@ func _on_join_button_pressed() -> void:
 
 
 func _on_send_pressed() -> void:
-	rpc("msg_rpc", username, message.text)
+	rpc("msg_rpc", MainMultiplayer.username, message.text)
 
 @rpc("any_peer","call_local")
 

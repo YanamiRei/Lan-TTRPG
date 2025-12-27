@@ -11,13 +11,22 @@ config_version=5
 [application]
 
 config/name="Lan TTRPG"
-run/main_scene="uid://dsu3klfvyvrd3"
+run/main_scene="uid://cjkki13jlsbgt"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+DiscordRPCLoader="*res://addons/discord-rpc-gd/nodes/discord_autoload.gd"
+MainMultiplayer="*res://scripts/main_multiplayer.gd"
+
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/godot-vim/plugin.cfg")
+enabled=PackedStringArray("res://addons/discord-rpc-gd/plugin.cfg", "res://addons/godot-vim/plugin.cfg")
+
+[gui]
+
+theme/default_font_multichannel_signed_distance_field=true
 
 [rendering]
 
